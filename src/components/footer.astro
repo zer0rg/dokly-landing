@@ -1,0 +1,90 @@
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./public/DOKLY.svg" alt="">
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <a href="#banner">Inicio</a>
+                <a href="#howItWorks">Cómo funciona</a>
+                <a href="#prices">Precios</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer-legal">
+                <h3>Información Legal</h3>
+                <a href="">Aviso Legal</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Política de cookies</a>
+                <a href="">Accesibilidad</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <div class="footer-contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:hola@dokly.es">hola@dokly.es</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dokly. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer{
+        background-color: #F9F9F9;
+
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            width: 1300px;
+            padding-top: 60px;
+
+            .footer-top{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+
+                img{
+                    width: 200px;
+                };
+                .footer-links, .footer-legal, .footer-contact{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding-bottom: 25px;
+                    h3{
+                        font-size: 1.3rem;
+                        width: 100%;
+                        text-align: left;
+                        border-bottom: 1px solid black;
+                    }
+                    a{
+                        width: 100%;
+                        font-size: 1.2rem;
+                        text-align: left;
+                        text-decoration: none;
+                        color: black;
+                    }
+                    a:hover{
+                        transition: .3s;
+                        text-decoration: underline;
+                    }
+                    i{
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+            .footer-bottom>p{
+                text-align: center;
+            }
+        }
+    }
+
+</style>

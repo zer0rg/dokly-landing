@@ -1,0 +1,113 @@
+<header>
+    <nav>
+        <div class="logo">
+            <img src="./DOKLY.svg" alt="">
+            <h3>Dokly</h3>
+        </div>
+        <div class="categories">
+            <a href="#banner">Inicio</a>
+            <a href="#howItWorks">Cómo funciona</a>
+            <a href="#prices">Precios</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <div class="sesion">
+            <a class="login" href="https://app.dokly.es/login">Iniciar sesión</a>
+            <a class="register" href="https://app.dokly.es/register">Regístrate</a>
+        </div>
+    </nav>
+</header>
+
+<style>
+    header{
+        width: 100%;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background-color: #F9F9F9;
+    }
+    nav{
+        width: 1300px;
+        height: 80px;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1rem;
+
+        .logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            img{
+                width: 50px;
+            }
+        }
+
+        .categories{
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content: center;
+            gap: 40px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+
+        .sesion{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 20%;
+            gap: 30px;
+            .login{
+                text-decoration: none;
+                color: black;
+            }
+            .register{
+                text-decoration: none;
+                color: white;
+                border: 1px solid #111827;
+                background-color: #111827;
+                border-radius: 8px;
+                height: 35px;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .register:hover{
+                transition: .5s;
+                transform: scale(1.2);
+                background-color: #1F2937;
+                border: 1px solid #1F2937;
+            }
+            .register:not(:hover){
+                transition: .5s;
+            }
+            .login{
+                height: 35px;
+                width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid transparent;
+                border-radius: 8px;
+            }
+            .login:hover{
+                transition: .5s;
+                border: 1px solid rgb(106, 106, 255);
+                transform: scale(1.2);
+            }
+            .login:not(:hover){
+                transition: .5s;
+                
+            }
+
+        }
+    }
+</style>

@@ -1,0 +1,194 @@
+<main id="banner">
+    <div class="info">
+        <div class="info-1">
+            <div class="info-1-1">
+                <img src="./public/sparkles-svgrepo-com.svg" alt="">
+                <p>Revoluciona tu práctica legal con IA</p>
+            </div>
+            <div class="info-1-2">
+                <h1>Genera tus documentos legales con <span class="ia-text">Inteligencia Artificial</span></h1>
+                <p>Dokly simplifica la creación de documentos legales. Sólo completa los formularios intuitivos y nuestra IA optimizará tu contenido para obtener documentos profesionales y precisos.</p>
+            </div>
+        </div>
+        <div class="info-2">
+            <div class="info-2-1">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Formularios simplificados e intuitivos</p>
+            </div>
+            <div class="info-2-2">
+                <i class="fa-solid fa-brain"></i>
+                <p>IA que mejora automaticamente tu contenido</p>
+            </div>
+            <div class="info-2-3">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <p>Documentos legales profesionales al instante</p>
+            </div>
+        </div>
+        <div class="info-3">
+            <a href="https://app.dokly.es/register">Regístrate ya</a>
+
+        </div>
+        <div class="info-4">
+            <div class="info-4-1">
+                <i class="fa-solid fa-circle-dot"></i>
+                <p>Configuración en 2 minutos</p>
+            </div>
+            <div class="info-4-2">
+                <i class="fa-solid fa-circle-dot"></i>
+                <p>Soporte profesional</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="image">
+        <img src="./public/screenshot.png" alt="">
+    </div>
+</main>
+
+<style>
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 1300px;
+        padding-top: 60px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+
+        .info{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+
+            .info-1{
+                padding: 50px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                .info-1-1{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    gap: 15px;
+                    p{
+
+                    }
+                    img{
+                        width: 15px;
+                    }
+
+                }
+                .info-1-2{
+                    h1{
+                        font-size: 3rem;
+                        .ia-text{
+                            background-image: linear-gradient(indigo, hotpink);
+                            background-clip: text;
+                            color: transparent;
+                        }
+                    }
+                }
+                
+                
+            }
+
+            .info-2{
+                width: 100%;
+                padding-bottom: 20px;
+            }
+            .info-2-1, .info-2-2, .info-2-3{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                justify-content: left;
+            }
+            .info-2-1>i{
+                color: #111827;
+                background-color: #D1D5DB;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                padding: 4px;
+                width: 17px;
+            }
+            .info-2-2>i{
+                color: #111827;
+                background-color: #D1D5DB;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                padding: 4px;
+                width: 17px;
+            }
+            .info-2-3>i{
+                color: #111827;
+                background-color: #D1D5DB;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                padding: 4px;
+                width: 17px;
+            }
+
+            .info-3{
+                width: 100%;
+                display: flex;
+                padding-bottom: 20px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    border: 1px solid #111827;
+                    background-color: #111827;
+                    border-radius: 8px;
+                    height: 40px;
+                    width: 130px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                a:hover{
+                    transition: .5s;
+                    transform: scale(1.2);
+                    background-color: #1F2937;
+                    border: 1px solid #1F2937;
+                }
+                a:not(:hover){
+                    transition: .5s;
+                }
+            }
+        }
+
+            .info-4{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 35px;
+                padding-bottom: 50px;
+            }
+            .info-4-1, .info-4-2{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                justify-content: left;
+                i{
+                    font-size: 10px;
+                    color: #1F2937;
+                }
+            }
+        }
+
+        .image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                width: 500px;
+            }
+            img:hover{
+                transform: scale(1.2);
+                transition: .5s;
+            }
+            img:not(:hover){
+                transition: .5s;
+            }
+        }
+    }
+
+</style>

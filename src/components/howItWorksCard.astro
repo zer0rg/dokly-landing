@@ -1,0 +1,13 @@
+--- 
+const {title, description, number, icon, id}=Astro.props
+---
+<div class="how-it-works-card">
+    <div class="number">
+        <span id="number">{number}</span>
+    </div>
+    <i class=`fa-solid ${icon}` id=`${id}`></i>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    
+</div>
+
