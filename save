@@ -1,0 +1,74 @@
+  <section id="documentSection">
+    <div class="documents-wrapper">
+      <div class="how-it-works-documents-info">
+        <h2>Tipos de documentos que puedes crear</h2>
+        <p>Dokly soporta una amplia variedad de documentos legales</p>
+      </div>
+      <div class="how-it-works-documents-cards">
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-file-contract"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Condiciones generales de venta o servicio</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de compraventa de vehículo</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de arras para compra de vivienda entre particulares</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de préstamo de dinero entre particulares</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-car-burst"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Recurso o alegaciones por multa de tráfico.</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de alquiler de vivienda, garaje o habitación</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Reclamación consumo</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de prestación de servicios entre particulares</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

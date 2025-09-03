@@ -9,8 +9,12 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
 <Layout>
   <Navbar />
   <main>
-    <Banner />
-    <section id="howItWorks">
+	<section>
+	<Banner/>
+
+	</section>
+  <section id="howItWorks">
+    <div class="how-it-works-wrapper">
       <div class="how-it-works-info">
         <h2>¿Cómo funciona Dokly?</h2>
         <p>
@@ -41,8 +45,10 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
           id="howItWorksCard3"
         />
       </div>
-    </section>
-    <section id="documentSection">
+    </div>
+  </section>
+  <section id="documentSection">
+    <div class="documents-wrapper">
       <div class="how-it-works-documents-info">
         <h2>Tipos de documentos que puedes crear</h2>
         <p>Dokly soporta una amplia variedad de documentos legales</p>
@@ -113,11 +119,12 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   </main>
-
-  <Footer />
 </Layout>
+
+<Footer />
 
 <style is:global>
   :root {
@@ -139,17 +146,18 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     }
   }
   main {
+  }
+
+  section {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: center;
     align-items: center;
   }
-  #howItWorks {
+  .how-it-works-wrapper {
     background-color: var(--background-primary);
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 1300px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,13 +241,12 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     }
   }
 
-  #documentSection {
+  .documents-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1300px;
-    width: 100%;
     background-color: var(--background-secondary);
     border-radius: 25px;
     padding: 25px;
@@ -345,10 +352,9 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
       width: 100% !important;
       min-width: unset;
     }
-    #banner {
+    .banner-wrapper {
       display: flex;
       flex-direction: column;
-      min-width: 100%;
       width: 100vw;
 
       .info {
