@@ -8,113 +8,116 @@ import HowItWorksCard from '../components/howItWorksCard.astro';
 
 <Layout>
 	<Navbar></Navbar>
-	<Banner></Banner>
-	<section id="howItWorks">
-		<div class="how-it-works-info">
-			<h2>¿Cómo funciona Dokly?</h2>
-			<p>En sólo 3 simples pasos, transforma tus ideas en documentos legales profesionales con la ayuda de nuestra Inteligencia Artificial.</p>
+	<main>
+		<Banner></Banner>
+		<section id="howItWorks">
+			<div class="how-it-works-info">
+				<h2>¿Cómo funciona Dokly?</h2>
+				<p>En sólo 3 simples pasos, transforma tus ideas en documentos legales profesionales con la ayuda de nuestra Inteligencia Artificial.</p>
 
-		</div>
-		<div class="how-it-works-cards">
-			<HowItWorksCard 
-				title="1. Completa el formulario" 
-				description="Responde preguntas simples y claras sobre tu documento. Nuestros formularios están diseñados para ser intuitivos y eficientes." 
-				number="01"
-				icon="fa-file-signature"
-				id="howItWorksCard1"></HowItWorksCard>
-			<HowItWorksCard 
-				title="2. La IA optimiza tu contenido"
-				description="Nuestra inteligencia artificial analiza tu información y mejora automáticamente la redacción, terminos legales y estructura."
-				number="02"
-				icon="fa-wand-magic-sparkles"
-				id="howItWorksCard2"></HowItWorksCard>
-			<HowItWorksCard 
-				title="3. Descarga tu documento"
-				description="Recibe tu documento legal profesional y listo para usar. Formato estándar, revisado y optimizado."
-				number="03"
-				icon="fa-download"
-				id="howItWorksCard3"></HowItWorksCard>
-		</div>
-		<div class="how-it-works-documents">
-			<div class="how-it-works-documents-info">
-				<h2>Tipos de documentos que puedes crear</h2>
-				<p>Dokly soporta una amplia variedad de documentos legales</p>
 			</div>
-			<div class="how-it-works-documents-cards-1">
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-file-contract"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Condiciones generales de venta o servicio</p>
-					</div>
-				</div>
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-car"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Contrato de compraventa de vehículo</p>
-					</div>
-				</div>
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-handshake"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Contrato de arras para compra de vivienda entre particulares</p>
-					</div>
-					
-				</div>
+			<div class="how-it-works-cards">
+				<HowItWorksCard 
+					title="1. Completa el formulario" 
+					description="Responde preguntas simples y claras sobre tu documento. Nuestros formularios están diseñados para ser intuitivos y eficientes." 
+					number="01"
+					icon="fa-file-signature"
+					id="howItWorksCard1"></HowItWorksCard>
+				<HowItWorksCard 
+					title="2. La IA optimiza tu contenido"
+					description="Nuestra inteligencia artificial analiza tu información y mejora automáticamente la redacción, terminos legales y estructura."
+					number="02"
+					icon="fa-wand-magic-sparkles"
+					id="howItWorksCard2"></HowItWorksCard>
+				<HowItWorksCard 
+					title="3. Descarga tu documento"
+					description="Recibe tu documento legal profesional y listo para usar. Formato estándar, revisado y optimizado."
+					number="03"
+					icon="fa-download"
+					id="howItWorksCard3"></HowItWorksCard>
 			</div>
-			<div class="how-it-works-documents-cards-2">
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-hand-holding-dollar"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Contrato de préstamo de dinero entre particulares</p>
-					</div>	
+			<div class="how-it-works-documents">
+				<div class="how-it-works-documents-info">
+					<h2>Tipos de documentos que puedes crear</h2>
+					<p>Dokly soporta una amplia variedad de documentos legales</p>
 				</div>
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-car-burst"></i>
+				<div class="how-it-works-documents-cards-1">
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-file-contract"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Condiciones generales de venta o servicio</p>
+						</div>
 					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Recurso o alegaciones por multa de tráfico.</p>
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-car"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Contrato de compraventa de vehículo</p>
+						</div>
 					</div>
-				</div>
-				<div class="how-it-works-documents-card">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-house"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Contrato de alquiler de vivienda, garaje o habitación</p>
-					</div>
-				</div>
-			</div>
-			<div class="how-it-works-documents-cards-3">
-				<div class="how-it-works-documents-card-3">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-receipt"></i>
-					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Reclamación consumo</p>
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-handshake"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Contrato de arras para compra de vivienda entre particulares</p>
+						</div>
+						
 					</div>
 				</div>
-				<div class="how-it-works-documents-card-3">
-					<div class="how-it-works-documents-card-top">
-						<i class="fa-solid fa-briefcase"></i>
+				<div class="how-it-works-documents-cards-2">
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-hand-holding-dollar"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Contrato de préstamo de dinero entre particulares</p>
+						</div>	
 					</div>
-					<div class="how-it-works-documents-card-bottom">
-						<p>Contrato de prestación de servicios entre particulares</p>
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-car-burst"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Recurso o alegaciones por multa de tráfico.</p>
+						</div>
 					</div>
-					
-					
+					<div class="how-it-works-documents-card">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-house"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Contrato de alquiler de vivienda, garaje o habitación</p>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>	
-	</section>
+				<div class="how-it-works-documents-cards-3">
+					<div class="how-it-works-documents-card-3">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-receipt"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Reclamación consumo</p>
+						</div>
+					</div>
+					<div class="how-it-works-documents-card-3">
+						<div class="how-it-works-documents-card-top">
+							<i class="fa-solid fa-briefcase"></i>
+						</div>
+						<div class="how-it-works-documents-card-bottom">
+							<p>Contrato de prestación de servicios entre particulares</p>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>	
+		</section>
+	</main>
+
 	<Footer></Footer>
 </Layout>
 
@@ -137,6 +140,11 @@ import HowItWorksCard from '../components/howItWorksCard.astro';
 		p{
 			font-size: 1.2rem;
 		}
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	#howItWorks{
 		background-color: var(--background-primary);
