@@ -7,7 +7,7 @@
             </div>
             <div class="info-1-2">
                 <h1>Genera tus documentos legales con <span class="ia-text">Inteligencia Artificial</span></h1>
-                <p>Dokly simplifica la creación de documentos legales. Sólo completa los formularios intuitivos y nuestra IA optimizará tu contenido para obtener documentos profesionales y precisos.</p>
+                <p>Dokly simplifica la creación de documentos legales. <br> Sólo completa los formularios intuitivos y nuestra IA optimizará tu contenido para obtener documentos profesionales y precisos.</p>
             </div>
         </div>
         <div class="info-2">
@@ -197,6 +197,9 @@
         .banner-wrapper{
             padding-top: 0;
         }
+        .info{
+            padding-top: 0 !important;
+        }
         .info-1-1{
             gap: 5px !important;
         }
@@ -207,7 +210,51 @@
             gap: 0px !important;
         }
         .info-4{
-            padding-bottom: 15px !important;
+            padding-bottom: 10px !important;
+            gap: 5px !important;
+        }
+        .info-4-1{
+            display: none !important;
+        }
+        .info-4-2{
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 992px){
+        *{
+            overflow-y: hidden;
+        }
+        .image{
+            align-items: start;
+            padding-top: 80px;
+        }
+        .image>img:hover{
+            transform: scale(1) !important;
+
+        }
+        .info-2-1>i{
+            background: none !important;
+            overflow: hidden;
+        }
+        .info-2-2>i{
+            background: none !important;
+            overflow: hidden;
+        }
+        .info-2-3>i{
+            background: none !important;
+            overflow: hidden;
+        }
+        .info-3>a{
+            width: 100% !important;
+        }
+        .info-3>a:hover{
+            transform: scale(1) !important;
+        }
+        .info-4-1>i{
+            display: none !important;
+        }
+        .info-4-2>i{
+            display: none !important;
         }
     }
 

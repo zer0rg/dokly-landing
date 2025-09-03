@@ -51,6 +51,9 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 width: 100%;
+                .footer-logo{
+                    order: 1;
+                }
                 img{
                     width: 200px;
                 };
@@ -59,6 +62,7 @@
                     flex-direction: column;
                     gap: 15px;
                     padding-bottom: 25px;
+                    order: 2;
                     h3{
                         font-size: 1.3rem;
                         width: 100%;
@@ -110,35 +114,70 @@
                 justify-content: center !important;
             }
             .footer-top{
-                flex-direction: column !important;
+                flex-direction: row !important;
                 justify-content: center !important;
-                align-items: center;
+                align-items: start;
+                gap: 10px;
                 width: 60% !important;
             }
+        
             .footer-logo{
                 display: flex;
                 justify-content: center;
-                padding-bottom: 40px;
+                align-items: start;
+                width: 50vw !important;
+                height: 100%;
+                order: 2 !important;
+            }
+            .footer-logo>img{
+                width: 100px !important;
+                clip-ath: inset(10% 10%);
             }
             .footer-links{
                 display: none !important;
             }
             .footer-legal{
                 width: 100%;
-                gap: 10px !important;
+                gap: 5px !important;
+                height: 100%;
+                padding-bottom: 0 !important;
+                order: 1 !important;
             }
             .footer-legal>h3{
                 margin: 0;
+                font-size: 1rem !important;
+            }
+            .footer-legal>a{
+                font-size: 1rem !important;
             }
 
             .footer-contact{
                 width: 100%;
+                height: 100%;
+                padding-bottom: 0 !important;
+                order: 1 !important;
             }
             .footer-contact>h3{
                 margin: 0;
                 text-align: left;
+                font-size: 1rem !important;
+            }
+            .footer-contact-item>i{
+                font-size: 12px !important;
+            }
+            .footer-contact-item>a{
+                font-size: 1rem !important;
+            }
+            .footer-bottom>p{
+                padding-top: 25px;
+                font-size: 1rem;
             }
 
+        }
+        @media only screen and (max-width: 1024px){
+            .footer-links{
+                display: none !important;
+            }
         }
 
 </style>

@@ -305,12 +305,6 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
 
         i {
           font-size: 25px;
-          border: 1px solid black;
-          padding: 10px;
-          border-radius: 50%;
-          height: 30px;
-          width: 30px;
-          background-color: black;
           color: var(--background-secondary);
         }
         p {
@@ -335,6 +329,7 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
 	}
     .how-it-works-cards {
       flex-direction: column;
+	  align-items: stretch !important;
       gap: 30px;
       padding-bottom: 5px !important;
     }
@@ -342,7 +337,6 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
 	  border: 1px solid var(--background-secondary);
 	  border-radius: 25px;
 	  background-color: var(--background-secondary);
-	  height: 100% !important;
 	  gap: 15px !important;
     }
 	.how-it-works-card>h3{
@@ -404,6 +398,9 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     .how-it-works-card {
       width: 45% !important;
     }
+	.documents-wrapper{
+		width: 90%;
+	}
     .how-it-works-documents-card {
       width: 45% !important;
       min-width: unset;
