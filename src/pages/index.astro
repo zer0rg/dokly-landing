@@ -1,342 +1,370 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Banner from '../components/banner.astro';
-import Navbar from '../components/navbar.astro';
-import Footer from '../components/footer.astro';
-import HowItWorksCard from '../components/howItWorksCard.astro';
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/banner.astro";
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
+import HowItWorksCard from "../components/howItWorksCard.astro";
 ---
 
 <Layout>
-	<Navbar></Navbar>
-	<main>
-		<Banner></Banner>
-		<section id="howItWorks">
-			<div class="how-it-works-info">
-				<h2>¿Cómo funciona Dokly?</h2>
-				<p>En sólo 3 simples pasos, transforma tus ideas en documentos legales profesionales con la ayuda de nuestra Inteligencia Artificial.</p>
+  <Navbar />
+  <main>
+    <Banner />
+    <section id="howItWorks">
+      <div class="how-it-works-info">
+        <h2>¿Cómo funciona Dokly?</h2>
+        <p>
+          En sólo 3 simples pasos, transforma tus ideas en documentos legales
+          profesionales con la ayuda de nuestra Inteligencia Artificial.
+        </p>
+      </div>
+      <div class="how-it-works-cards">
+        <HowItWorksCard
+          title="1. Completa el formulario"
+          description="Responde preguntas simples y claras sobre tu documento. Nuestros formularios están diseñados para ser intuitivos y eficientes."
+          number="01"
+          icon="fa-file-signature"
+          id="howItWorksCard1"
+        />
+        <HowItWorksCard
+          title="2. La IA optimiza tu contenido"
+          description="Nuestra inteligencia artificial analiza tu información y mejora automáticamente la redacción, terminos legales y estructura."
+          number="02"
+          icon="fa-wand-magic-sparkles"
+          id="howItWorksCard2"
+        />
+        <HowItWorksCard
+          title="3. Descarga tu documento"
+          description="Recibe tu documento legal profesional y listo para usar. Formato estándar, revisado y optimizado."
+          number="03"
+          icon="fa-download"
+          id="howItWorksCard3"
+        />
+      </div>
+    </section>
+    <section id="documentSection">
+      <div class="how-it-works-documents-info">
+        <h2>Tipos de documentos que puedes crear</h2>
+        <p>Dokly soporta una amplia variedad de documentos legales</p>
+      </div>
+      <div class="how-it-works-documents-cards">
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-file-contract"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Condiciones generales de venta o servicio</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de compraventa de vehículo</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de arras para compra de vivienda entre particulares</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de préstamo de dinero entre particulares</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-car-burst"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Recurso o alegaciones por multa de tráfico.</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de alquiler de vivienda, garaje o habitación</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Reclamación consumo</p>
+          </div>
+        </div>
+        <div class="how-it-works-documents-card">
+          <div class="how-it-works-documents-card-top">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="how-it-works-documents-card-bottom">
+            <p>Contrato de prestación de servicios entre particulares</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-			</div>
-			<div class="how-it-works-cards">
-				<HowItWorksCard 
-					title="1. Completa el formulario" 
-					description="Responde preguntas simples y claras sobre tu documento. Nuestros formularios están diseñados para ser intuitivos y eficientes." 
-					number="01"
-					icon="fa-file-signature"
-					id="howItWorksCard1"></HowItWorksCard>
-				<HowItWorksCard 
-					title="2. La IA optimiza tu contenido"
-					description="Nuestra inteligencia artificial analiza tu información y mejora automáticamente la redacción, terminos legales y estructura."
-					number="02"
-					icon="fa-wand-magic-sparkles"
-					id="howItWorksCard2"></HowItWorksCard>
-				<HowItWorksCard 
-					title="3. Descarga tu documento"
-					description="Recibe tu documento legal profesional y listo para usar. Formato estándar, revisado y optimizado."
-					number="03"
-					icon="fa-download"
-					id="howItWorksCard3"></HowItWorksCard>
-			</div>
-			<div class="how-it-works-documents">
-				<div class="how-it-works-documents-info">
-					<h2>Tipos de documentos que puedes crear</h2>
-					<p>Dokly soporta una amplia variedad de documentos legales</p>
-				</div>
-				<div class="how-it-works-documents-cards-1">
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-file-contract"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Condiciones generales de venta o servicio</p>
-						</div>
-					</div>
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-car"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Contrato de compraventa de vehículo</p>
-						</div>
-					</div>
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-handshake"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Contrato de arras para compra de vivienda entre particulares</p>
-						</div>
-						
-					</div>
-				</div>
-				<div class="how-it-works-documents-cards-2">
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-hand-holding-dollar"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Contrato de préstamo de dinero entre particulares</p>
-						</div>	
-					</div>
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-car-burst"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Recurso o alegaciones por multa de tráfico.</p>
-						</div>
-					</div>
-					<div class="how-it-works-documents-card">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-house"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Contrato de alquiler de vivienda, garaje o habitación</p>
-						</div>
-					</div>
-				</div>
-				<div class="how-it-works-documents-cards-3">
-					<div class="how-it-works-documents-card-3">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-receipt"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Reclamación consumo</p>
-						</div>
-					</div>
-					<div class="how-it-works-documents-card-3">
-						<div class="how-it-works-documents-card-top">
-							<i class="fa-solid fa-briefcase"></i>
-						</div>
-						<div class="how-it-works-documents-card-bottom">
-							<p>Contrato de prestación de servicios entre particulares</p>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>	
-		</section>
-	</main>
-
-	<Footer></Footer>
+  <Footer />
 </Layout>
 
 <style is:global>
-	:root {
-    	--primary-color: #111827;          
-    	--background-primary: white;
-    	--background-secondary: #F9F9F9;
-    	--hover-primary: #1F2937;
-    	--hover-secondary: #D1D5DB;
-    	--text-color: #111827; 
-    	--text-color-light: #6B7280;
-  	}
-	*{
-		font-family: Raleway;
-		h1{
-			margin: 0;
-		}
-		p{
-			font-size: 1.2rem;
-		}
-	}
-	main{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	#howItWorks{
-		background-color: var(--background-primary);
-		padding-top: 50px;
-		padding-bottom: 50px;
-        max-width: 1300px;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		.how-it-works-info{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding-bottom: 50px;
+  :root {
+    --primary-color: #111827;
+    --background-primary: white;
+    --background-secondary: #f9f9f9;
+    --hover-primary: #1f2937;
+    --hover-secondary: #d1d5db;
+    --text-color: #111827;
+    --text-color-light: #6b7280;
+  }
+  * {
+    font-family: Raleway;
+    h1 {
+      margin: 0;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  #howItWorks {
+    background-color: var(--background-primary);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .how-it-works-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
 
-			h2{
-				font-size: 2rem;
-				width: 100%;
-				text-align: center;
-			}
-			p{
-				width: 70%;
-				text-align: center;
-			}
-		}
+      h2 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        width: 70%;
+        text-align: center;
+      }
+    }
 
-		.how-it-works-cards{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			padding-bottom: 50px;
+    .how-it-works-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
 
-			.how-it-works-card{
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				gap: 25px;
-				width: 33%;
-				#number{
-					font-size: 70px;
-					position: absolute;
-					padding-left: 90px;
-					font-weight: bold;
-					color: #e9e9e9;
-				}
-				i{
-					position: relative;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					font-size: 40px;
-					border-radius: 15px;
-					width: 80px;
-					height: 80px;
-					color: #F9F9F9;
-				}
-				i:hover{
-					transform: rotate(20deg);
-					transition: .5s;
-				}
-				i:not(:hover){
-					transition: .5s;
-				}
-				h3{
-					font-size: 1.3rem;
-					margin: 0;
-				}
-				p{
-					text-align: center;
-					width: 80%;
-					margin: 0;
-				}
-			}
-			#howItWorksCard1{
-				background: linear-gradient(blue, rgb(138, 202, 255));
-			}
-			#howItWorksCard2{
-				background: linear-gradient(indigo, hotpink);
-			}
-			#howItWorksCard3{
-				background: linear-gradient(green, rgb(5, 255, 5));
-			}
-		}
+      .how-it-works-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 33%;
+        #number {
+          font-size: 70px;
+          position: absolute;
+          padding-left: 90px;
+          font-weight: bold;
+          color: #e9e9e9;
+        }
+        i {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          border-radius: 15px;
+          width: 80px;
+          height: 80px;
+          color: #f9f9f9;
+        }
+        i:hover {
+          transform: rotate(20deg);
+          transition: 0.5s;
+        }
+        i:not(:hover) {
+          transition: 0.5s;
+        }
+        h3 {
+          font-size: 1.3rem;
+          margin: 0;
+        }
+        p {
+          text-align: center;
+          width: 80%;
+          margin: 0;
+        }
+      }
+      #howItWorksCard1 {
+        background: linear-gradient(blue, rgb(138, 202, 255));
+      }
+      #howItWorksCard2 {
+        background: linear-gradient(indigo, hotpink);
+      }
+      #howItWorksCard3 {
+        background: linear-gradient(green, rgb(5, 255, 5));
+      }
+    }
+  }
 
-		.how-it-works-documents{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			background-color: var(--background-secondary);
-			border-radius: 25px;
-			padding: 25px;
+  #documentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    background-color: var(--background-secondary);
+    border-radius: 25px;
+    padding: 25px;
 
-			.how-it-works-documents-info{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				padding-bottom: 25px;
-				h2{
-					font-size: 1.8rem;
-				}
-			}
+    .how-it-works-documents-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 25px;
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
 
-			.how-it-works-documents-cards-1, .how-it-works-documents-cards-2, .how-it-works-documents-cards-3{
-				display: flex;
-				flex-direction: row;
-				padding: 0 25px 0 25px;
-				gap: 15px;
-				justify-content: center;
-				align-items: center;
+    .how-it-works-documents-cards {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      align-items: center;
 
-				.how-it-works-documents-card-bottom{
-					height: 50%;
-				}
-				.how-it-works-documents-card-top{
-					border: 1px solid black;
-					padding: 10px;
-					border-radius: 50%;
-					height: 30px;
-					width: 30px;
-					background-color: black;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
+      .how-it-works-documents-card-bottom {
+        height: 50%;
+      }
+      .how-it-works-documents-card-top {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-				.how-it-works-documents-card-3{
-					background-color: var(--background-primary);
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					width: 50%;
-					border: 1px solid rgb(201, 201, 201);
-					border-radius: 15px;
-					padding: 15px;
-					margin-bottom: 15px;
-					height: 130px;
+      .how-it-works-documents-card {
+        background-color: var(--background-primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 270px;
+        width: 30%;
+        border: 1px solid rgb(201, 201, 201);
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 15px;
+        height: 130px;
 
-					i{
-						font-size: 25px;
-						color: white;
-					}
-					p{
-						text-align: center;
-					}
-				}
+        i {
+          font-size: 25px;
+          border: 1px solid black;
+          padding: 10px;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          background-color: black;
+          color: var(--background-secondary);
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
 
-				.how-it-works-documents-card{
-					background-color: var(--background-primary);
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					width: 30%;
-					border: 1px solid rgb(201, 201, 201);
-					border-radius: 15px;
-					padding: 15px;
-					margin-bottom: 15px;
-					height: 130px;
+  @media only screen and (max-width: 1024px) {
+    .how-it-works-cards {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .how-it-works-card {
+      width: 45% !important;
+    }
+    .how-it-works-documents-card {
+      width: 45% !important;
+      min-width: unset;
+    }
+  }
 
-					i{
-						font-size: 25px;
-						border: 1px solid black;
-						padding: 10px;
-						border-radius: 50%;
-						height: 30px;
-						width: 30px;
-						background-color: black;
-						color: var(--background-secondary);
-					}
-					p{
-						text-align: center;
-					}
-				}
-			}
-		}
-	}
+  @media only screen and (max-width: 767px) {
+    #number {
+      display: none;
+    }
+    #howItWorks .how-it-works-info p {
+      width: 90%;
+    }
+    .how-it-works-cards {
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 20px;
+    }
+    .how-it-works-card {
+      width: 90% !important;
+    }
+    .how-it-works-documents-card {
+      width: 100% !important;
+      min-width: unset;
+    }
+    #banner {
+      display: flex;
+      flex-direction: column;
+      min-width: 100%;
+      width: 100vw;
 
-	@media screen and (max-width: 767px){
-		main{
+      .info {
+        max-width: 100% !important;
+        width: 100%;
+        padding: 20px;
+      }
 
-		}
-		#number{
-			display: none;
-		}
-	}
-
+      .info-3 {
+        a {
+          width: 100% !important;
+        }
+      }
+    }
+    .image {
+      display: none !important;
+    }
+  }
 </style>
