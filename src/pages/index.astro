@@ -47,7 +47,7 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
       </div>
     </div>
   </section>
-  <section id="documentSection">
+  <section id="documentsSection">
     <div class="documents-wrapper">
       <div class="how-it-works-documents-info">
         <h2>Tipos de documentos que puedes crear</h2>
@@ -74,7 +74,7 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
           <div class="how-it-works-documents-card-top">
             <i class="fa-solid fa-handshake"></i>
           </div>
-          <div class="how-it-works-documents-card-bottom">
+          <div class="how-it-works-documents-card-bottom" id="how-it-works-documents-card-bottom-special">
             <p>Contrato de arras para compra de vivienda entre particulares</p>
           </div>
         </div>
@@ -250,6 +250,7 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     background-color: var(--background-secondary);
     border-radius: 25px;
     padding: 25px;
+	margin-bottom: 50px;
 
     .how-it-works-documents-info {
       display: flex;
@@ -319,20 +320,6 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     }
   }
 
-  @media only screen and (max-width: 1024px) {
-    .how-it-works-cards {
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .how-it-works-card {
-      width: 45% !important;
-    }
-    .how-it-works-documents-card {
-      width: 45% !important;
-      min-width: unset;
-    }
-  }
-
   @media only screen and (max-width: 767px) {
     #number {
       display: none;
@@ -340,18 +327,53 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     #howItWorks .how-it-works-info p {
       width: 90%;
     }
+	.how-it-works-info{
+		padding-bottom: 20px !important;
+	}
+	.how-it-works-info>h2{
+		margin-top: 0;
+	}
     .how-it-works-cards {
       flex-direction: column;
       gap: 30px;
-      padding-bottom: 20px;
+      padding-bottom: 5px !important;
     }
     .how-it-works-card {
-      width: 90% !important;
+	  border: 1px solid var(--background-secondary);
+	  border-radius: 25px;
+	  background-color: var(--background-secondary);
+	  height: 100% !important;
+	  gap: 15px !important;
     }
+	.how-it-works-card>h3{
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.how-it-works-card>p{
+		font-size: 1rem;
+		tet-align: left !important;
+		padding-bottom: 20px;
+	}
+	#documentsSection{
+		width: 100%;
+	}
+	.documents-wrapper{
+		width: 80%;
+	}
+	.how-it-works-documents-info{
+		padding-bottom: 0 !important;
+	}
+	.how-it-works-documents-info>h2{
+		margin: 0;
+	}
     .how-it-works-documents-card {
       width: 100% !important;
       min-width: unset;
     }
+	#how-it-works-documents-card-bottom-special{
+		padding-bottom: 15px;
+	}
     .banner-wrapper {
       display: flex;
       flex-direction: column;
@@ -371,6 +393,20 @@ import HowItWorksCard from "../components/howItWorksCard.astro";
     }
     .image {
       display: none !important;
+    }
+  }
+
+    @media only screen and (max-width: 1024px) {
+    .how-it-works-cards {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .how-it-works-card {
+      width: 45% !important;
+    }
+    .how-it-works-documents-card {
+      width: 45% !important;
+      min-width: unset;
     }
   }
 </style>

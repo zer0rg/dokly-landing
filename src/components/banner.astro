@@ -51,8 +51,6 @@
         flex-direction: row;
         max-width: 1300px;
         padding: 20px;
-        margin-top: 80px;
-        
         border-bottom: 1px solid rgb(201, 201, 201);
 
         .info{
@@ -70,9 +68,6 @@
                     flex-direction: row;
                     width: 100%;
                     gap: 15px;
-                    p{
-
-                    }
                     img{
                         width: 15px;
                     }
@@ -198,7 +193,22 @@
             }
         }
 
-        @me
-
+    @media screen and (max-width: 767px){
+        .banner-wrapper{
+            padding-top: 0;
+        }
+        .info-1-1{
+            gap: 5px !important;
+        }
+        .info-1-2>h1{
+            font-size: 2.2rem !important;
+        }
+        .info-2{
+            gap: 0px !important;
+        }
+        .info-4{
+            padding-bottom: 15px !important;
+        }
+    }
 
 </style>
