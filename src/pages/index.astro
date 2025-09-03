@@ -133,7 +133,6 @@ import HowItWorksCard from '../components/howItWorksCard.astro';
   	}
 	*{
 		font-family: Raleway;
-		align-self: center;
 		h1{
 			margin: 0;
 		}
@@ -150,11 +149,12 @@ import HowItWorksCard from '../components/howItWorksCard.astro';
 		background-color: var(--background-primary);
 		padding-top: 50px;
 		padding-bottom: 50px;
-        justify-self: center;
         max-width: 1300px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		.how-it-works-info{
 			display: flex;
 			flex-direction: column;
@@ -327,6 +327,15 @@ import HowItWorksCard from '../components/howItWorksCard.astro';
 					}
 				}
 			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		main{
+
+		}
+		#number{
+			display: none;
 		}
 	}
 
