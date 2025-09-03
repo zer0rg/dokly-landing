@@ -50,12 +50,14 @@
         display: flex;
         flex-direction: row;
         justify-self: center;
-        width: 1300px;
+        max-width: 1300px;
+        width: 100%;
         padding-top: 60px;
         border-bottom: 1px solid rgb(201, 201, 201);
 
         .info{
-            width: 60%;
+            max-width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: column;
 
@@ -173,13 +175,14 @@
         }
 
         .image{
-            width: 50%;
+            max-width: 50%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             
             img{
-                width: 500px;
+                max-width: 500px;
             }
             img:hover{
                 transform: scale(1.2);
